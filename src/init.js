@@ -23,19 +23,24 @@ $(document).ready(function() {
     // make a dancer with a random position
 
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $(".dancers").height() * Math.random(),
+      $(".dancers").width() * Math.random(),
       Math.random() * 1000
     );
     window.dancers.push(dancer);
-    $('body').append(dancer.$node);
+    $('.dancers').append(dancer.$node);
+  });
+
+  $('.lineupButton').on("click", function(event){
+    $(".dancer").css("left", "100px");
+    // $(".dancer").css("flex-direction", "column");
+    // $(".dancer").css("align-items", "flex-start");
+  });
+
+  //when one of our dancers are moused over
+  //will run a function that changes the moused over dancer to blue
+  $('.thingOne').mouseover(function(){
+    $('.thingOne').css("color", "lightblue")
   });
 });
 
-$('.lineupButton').on('click', function(event) {
-  // for (var i = 0; i < window.dancers.length; i++){
-
-  // }
-  //use dancer class to set flex display left
-  $('.dancer').css('display', '')
-}

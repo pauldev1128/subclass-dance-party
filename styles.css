@@ -3,14 +3,16 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  /* background-color:#44; */
+  /* background: url("https://media.istockphoto.com/photos/blue-disco-background-picture-id466083160?k=6&m=466083160&s=612x612&w=0&h=lJh_OZHfTrYuJ4HrUALM29RiwdjLG9OOya76SPLqucg="); */
+  /* background: url("https://www.youtube.com/watch?v=VRpdoDuMHgE"); */
+  background-color: #444;
   font-size: 18px;
-  display: flex;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton, .addThingOneDancerButton{
+.title, .addDancerButton, .addThingOneDancerButton, .lineupButton{
   padding:5px 12px;
   float:right;
 }
@@ -49,7 +51,7 @@ body, a:link, a:visited, a:active{
 }
 
 .infinity {
-  position: relative;
+  position: absolute;
   width: 212px;
   height: 100px;
   box-sizing: content-box;
@@ -76,4 +78,14 @@ body, a:link, a:visited, a:active{
 .weirdDancer {
   border: 20px dotted;
   color: orange;
+}
+.dancers{
+  display: flex;
+}
+.videoForeground {
+  /* background: lightblue; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -99;
 }
