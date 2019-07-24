@@ -1,6 +1,6 @@
 var thingOneDancer = function(top, left, timeBetweenSteps){
   makeBlinkyDancer.call(this, top, left, timeBetweenSteps);
-  this.$node = $('<span class="thingOne dancer square"></span>');
+  this.$node = $('<span class="thingOne dancer square rotating"><iframe src="https://gifer.com/embed/zd" width=200 height=200 frameBorder="0" allowFullScreen></iframe><p><a href="https://gifer.com"></a></p></span>');
   this.setPosition();
   // this.changeColors();
 }

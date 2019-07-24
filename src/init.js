@@ -33,14 +33,26 @@ $(document).ready(function() {
 
   $('.lineupButton').on("click", function(event){
     $(".dancer").css("left", "100px");
-    // $(".dancer").css("flex-direction", "column");
-    // $(".dancer").css("align-items", "flex-start");
   });
 
-  //when one of our dancers are moused over
-  //will run a function that changes the moused over dancer to blue
-  $('.thingOne').mouseover(function(){
-    $('.thingOne').css("color", "lightblue")
-  });
+  $('.dancers')
+    .mouseover(".weirdDancer", function(){
+      $('.weirdDancer').css("color", "pink");
+  })
+    .mouseout(".weirdDancer", function(){
+      $('.weirdDancer').css('color', 'orange');
+    })
+
+  //loop through dancers
+  //have first dancer switch places with second dancer
+  // $('.danceWithPartnerButton').on('click', function(event){
+  //   for (var i = 0; i < windows.dancers.length; i++){
+  //     //get position of dancer one
+
+  //     //get position of dancer two
+
+  //     //swap
+  //   }
+  // })
 });
 

@@ -21,6 +21,8 @@
 
 var makeBlinkyDancer = function(top, left, timeBetweenSteps) {
   makeDancer.call(this, top, left, timeBetweenSteps);
+  this.$node = $('<span class="blinkyDancer dancer"><div class="wrapper"><iframe src="https://giphy.com/embed/lOa0tPKiMLdqVdFiS8" width="150" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/448studio-ryan-renolds-detective-pickachu-full-lOa0tPKiMLdqVdFiS8"></a></p></div></span>');
+  this.setPosition();
 }
 
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
